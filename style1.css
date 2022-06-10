@@ -1,0 +1,979 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Gideon+Roman&family=Herr+Von+Muellerhoff&family=Oxygen:wght@300&family=Poppins:wght@400;500;600;700&family=Teko:wght@300&display=swap');
+/*resetleme kodları*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*x eksenin de scrolun çıkmasını engeller*/
+body{
+	overflow-x: hidden;
+	font-family: 'poppins' , sans-serif;
+}
+/*HEADER BAŞLANGIÇ*/
+.logo img{
+	width: 100%;
+	max-width: 200px;
+	z-index: 999;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 10px;
+	transition: all ease 0.5s;
+	z-index: 99999;
+	background-color: #000080;
+}
+
+header ul li{
+	display: inline-block;
+	margin: 0 15px;
+}
+
+header ul li a{
+	color: white;
+	transition: all ease 0.5s;
+	font-weight: 700;
+}
+
+
+header:hover a{
+	color: #ffb90f;
+}
+
+.mega-menu{
+	position: absolute;
+	left: 15%;
+	top: 50px;
+	width: 100%;
+	background-color:#000080 ;
+	padding: 20px 100px;
+	border-radius: 5px;
+	display: none;
+}
+
+header ul li:hover .mega-menu{
+	display:block;
+	width: 100%;
+}
+
+.mega-menu ul li{
+	width: 100%;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.mega-menu ul li a{
+	color:#ffb90f ;
+}
+
+.mega-menu ul li ion-icon{
+	font-size: 12px;
+	opacity: 0;
+	transition: all ease 0.5s;
+}
+
+.mega-menu ul li a:hover ion-icon{
+	opacity: 1;
+}
+
+/*HEADER BİTİŞ*/
+
+
+/*kurumsal başlangıç*/
+
+.kürümsal{
+	margin-bottom: 150px;
+}
+
+.kürümsal-title{
+	margin: 60px 0;
+
+
+}
+.kürümsal-title {
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	color: #000080;
+	font-size: 30px;
+	font-weight: 600;
+	padding: 100px 0px 0px 0px;
+}
+
+.kürümsal-title h2{
+	color: #000080;
+}
+
+.kürümsal-title h2:after{
+	content: "";
+	width: 30px;
+	height: 3px;
+	background-color:#000080 ;
+	margin: 0 auto;
+	display: block;
+}
+.kürümsal-content{
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+
+}
+.kürümsal-img{
+	width: 40%;
+}
+.kürümsal-img img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+.kürümsal-text{
+	width: 40%;
+}
+h4{
+	margin-bottom: 25px;
+	text-align: center;
+	font-size: 40px;
+	color: #ffc125;
+}
+h5{
+	margin-bottom: 25px;
+	text-align: left;
+	font-size: 25px;
+	color: #ffc125;
+}
+p{
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+	color: black;
+	font-weight: bold;
+	font-family: "Gill Sans", sans-serif;
+}
+.contact h2{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	color:#000080 ;
+	font-size: 30px;
+	font-weight: 600px;
+}
+
+/*kurumsal bitiş*/
+
+/*tarihce başlangıç*/
+
+.tarihce-container{
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.tarihce-tittle{
+	margin: 80px 0;
+	
+}
+
+.tarihce-tittle h2{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	color: #000080;
+	font-size: 30px;
+	font-weight: 600px;
+	padding: 80px 0px 0px 0px;
+}
+
+.tarihce-tittle h2::after{
+	content: '';
+	width: 30px;
+	height: 3px;
+	background-color: #000080;
+	margin: 0 auto;
+	display: block;
+	margin-top: 10px;
+}
+
+.tarihce-body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	min-height:100vh ;
+	background:white ;
+
+}
+
+.box{
+	position: relative;
+	width: 300px;
+	height: 300px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 40px;
+	transition: 0.5s;
+
+}
+
+.box .imgbx{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+.box:hover{
+
+	height: 250px;
+}
+.box .imgbx img{
+	max-width: 100%;
+	opacity: 0.1;
+	transition: 0.5s;
+}
+.box:hover .imgbx img{
+	opacity: 1;
+}
+
+.box:before{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+}
+
+.box:after{
+	content: '';
+	position: absolute;
+	top: -2px;
+	left: -2px;
+	right: -2px;
+	bottom: -2px;
+	z-index: -2;
+	filter: blur(40px);
+	
+}
+
+.box:before,
+.box:after{
+	background: linear-gradient(235deg,#89ff00,#010615,#00bcd4);
+}
+
+.box:nth-child(2):before,
+.box:nth-child(2):after{
+	background: linear-gradient(235deg,#ff005e,#010615,#fbff00);
+}
+
+.box:nth-child(3):before,
+.box:nth-child(3):after{
+	background: linear-gradient(235deg,#772aff,#010615,#2196F3);
+}
+
+/*tarihce bitiş*/
+
+/*BUGÜNKÜ GEBZE BAŞLANGIÇ*/
+
+.Bugunkugebze-container{
+	max-width: 1170px;
+	margin: 0 auto;
+	padding: 0 15px;
+}
+
+.Bugunkugebze-tittle{
+	margin: 80px 0;
+	
+}
+
+.Bugunkugebze-tittle h2{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	color: #000080;
+	font-size: 30px;
+	font-weight: 600px;
+	padding: 80px 0px 0px 0px;
+}
+
+.Bugunkugebze-tittle h2::after{
+	content: '';
+	width: 30px;
+	height: 3px;
+	background-color: #000080;
+	margin: 0 auto;
+	display: block;
+	margin-top: 10px;
+}
+
+
+.Bugunkugebze-body{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	overflow: hidden;
+	flex-wrap: wrap;
+	min-height:100vh ;
+	background:white ;
+}
+
+.slidergebze{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	transform-style: preserve-3d;
+	animation: rotate 30s linear infinite;
+}
+
+@keyframes rotate{
+	0%{
+		transform: perspective(1000px) rotateY(0deg);
+	}
+
+	100%{
+		transform: perspective(1000px) rotateY(360deg);
+	}
+}
+
+.slidergebze span{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform-origin: center;
+	transform-style: preserve-3d;
+	transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+}
+
+.slidergebze span img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border-radius: 100px;
+	object-fit: cover;
+	transition: 2s;
+}
+
+.slidergebze span:hover img{
+	transform: translateY(-50px) scale(1.2);
+}
+/*BUGÜNKÜ GEBZE BİTİŞ*/
+
+
+/*FOTOĞRAFLARLA GEBZE BAŞLANGIÇ*/
+
+.fotobody{
+	padding: 100px 0  100px;
+}
+
+.fotograflarla-tittle{
+	margin: 80px 0;
+	
+}
+
+.fotograflarla-tittle h2{
+	width: 100%;
+	text-align: center;
+	margin: 0 auto;
+	color: #000080;
+	font-size: 30px;
+	font-weight: 600px;
+	padding: 0px 0px 0px ;
+}
+
+.fotograflarla-tittle h2::after{
+	content: '';
+	width: 30px;
+	height: 3px;
+	background-color: #000080;
+	margin: 0 auto;
+	display: block;
+	margin-top: 10px;
+}
+
+.img-gallery{
+	width: 80%;
+	margin:100px auto 50px ;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	grid-gap: 30px;
+}
+
+.img-gallery img{
+	width: 100%;
+	cursor: pointer;
+	transition: 0.4s;
+}
+
+.img-gallery img:hover{
+	transform: scale(0.8) rotate(-15deg);
+	border-radius: 20px;
+	box-shadow:0 32px 75px rgba(68, 77, 136, 0.2) ;
+}
+
+.full-img{
+	width: 100%;
+	height: 100vh;
+	background: rgba(0, 0, 0, 0.9);
+	position: fixed;
+	top: 0;
+	left: 0;
+	display: none;
+	align-items: center;
+	justify-content: center;
+	z-index: 100;
+}
+
+.full-img img{
+	width: 90%;
+	max-width: 500px;
+
+}
+
+.full-img span{
+	position: absolute;
+	top: 5%;
+	right: 5%;
+	font-size: 30px;
+	color: #fff;
+	cursor: pointer;
+}
+
+/*FOTOĞRAFLARLA GEBZE BİTİŞ*/
+
+
+/*MAHALLE MUHTARLARI BAŞLANGIÇ*/
+
+.mbody{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 150px 0  100px;
+}
+
+
+.Mahallemuhtarlari-container{
+	position: relative;
+	width: 1100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 30px;
+}
+
+.Mahallemuhtarlari-container .Mahallemuhtarlari-card{
+	position: relative;
+	max-width: 320px;
+	height: 510px;
+	background-color:#000080 ;
+	margin: 30px 10px;
+	padding: 15px 10px;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+	transition: 0.3s ease-in-out;
+}
+
+.Mahallemuhtarlari-container .Mahallemuhtarlari-card .MMresim{
+	position: relative;
+	width: 260px;
+	height: 280px;
+	top: -65px;
+	left: 20px;
+	z-index: 1;
+	box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.Mahallemuhtarlari-container .Mahallemuhtarlari-card .MMresim img{
+	max-width: 100%;
+	border-radius: 4px;
+
+}
+.Mahallemuhtarlari-content ion-icon,a,h2{
+	color: white;
+	text-align: center;
+}
+.Mahallemuhtarlari-content h2{
+	color: #ffc125;
+}
+.Mahallemuhtarlari-content ion-icon{
+	color: #ffc125;
+}
+
+.h2 h2{
+	color:#000080 ;
+	padding: 100px 0 0;
+}
+
+
+/*MAHALLE MUHTARLARI BİTİŞ*/
+
+
+/*ETKİNLİK BAŞLANGIÇ*/
+
+.cbody{
+	background: #f1fbff;
+	margin-top: 70px;
+	margin-bottom: 100px;
+}
+
+.calendar{
+	padding:20px 40px;
+}
+
+.months-container{
+	justify-content: center;
+	gap: 40px;
+}
+
+.calendar .months-container .month-container{
+	background:	#FBC02D ;
+	padding: 20px;
+	min-width: 280px;
+	box-shadow: 15px 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.calendar table.month th.month-title{
+	color:#000080 ;
+	font-size: 1.9em;
+	font-weight: 200px;
+}
+
+table.month td:first-child,
+table.month td:last-child,
+table.month thead tr:nth-child(2) th:first-child,
+table.month thead tr:nth-child(2) th:last-child
+{
+	color:#E65100 ;
+}
+
+.calendar table.month td.day .day-content{
+	padding: 6px 8px;
+}
+
+.calendar table.month th.day-header{
+	color:#000080;
+	font-size:0.9em ;
+	font-weight: 700px;
+}
+
+.month tr td{
+	font-size: 0.9em;
+	font-weight: 500px;
+	color:#000080 ;
+}
+
+table.month td.day .day-content:hover{
+	background-color:#000080 ;
+	color: white;
+}
+.calendar .calendar-header{
+	border: none;
+}
+.calendar .calendar-header table th:hover{
+	background: transparent;
+}
+
+.calendar .calendar-header .year-title{
+	font-size: 4em;
+	color:#E65100 ;
+}
+
+.calendar .calendar-header .year-neighbor{
+	font-size: 2.25em;
+}
+.calendar .calendar-header .year-neighbor2{
+	font-size: 1em;
+}
+/*ETKİNLİK BİTİŞ*/
+
+/*YAYINLARIMIZ BAŞLANGIÇ*/
+
+.yayin-body{
+	display: column;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	height: 70vh;
+	background:white ;
+	margin-top: 100px;
+}
+
+.yayin-body h3{
+	color:#ffc125 ;
+	text-align: center;
+	font-size: 50px;
+}
+.pdf{
+	text-align: center;
+
+}
+
+.pdf img{
+	width: 100%;
+	max-width: 50px;
+	text-align: center;
+	align-items: center;
+	justify-content: space-between;
+}
+.pdf a{
+	color: darkblue;
+	display: inline-block;
+	padding: 50px 0 50px;
+	align-items: center;
+	justify-content: space-between;
+}
+.yayin-body hr{
+	height: 5px;
+	color: darkblue;
+	background-color: darkblue;
+}
+
+/*YAYINLARIMIZ BİTİŞ*/
+
+/*İLETİŞİM BAŞLANGIÇ*/
+
+.iletisim
+{
+	position: relative;
+	display: flex;
+	justify-content:center;
+	align-items: center;
+	min-height: 100vh;
+	background: #112d42;
+}
+
+.iletisim::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: #03a9f4;
+}
+
+.iletisim .iletisimcontainer{
+	position: relative;
+	min-width: 1100px;
+	min-height: 550px;
+	display: flex;
+	z-index: 1000;
+}
+
+.iletisim .iletisimcontainer .contentinfo{
+	position: absolute;
+	top: 40px;
+	width: 350px;
+	height: calc(100% - 80px);
+	background: #0f3959;
+	z-index: 1;
+	padding:40px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.2);
+}
+
+.iletisim .iletisimcontainer .contentinfo h2{
+	color: white;
+	font-size: 24px;
+	font-weight: 500;
+}
+.iletisim .sci a img{
+	width: 40px;
+}
+
+.iletisim .iletisimcontainer .contentinfo .info{
+	position: relative;
+	margin: 20px 0
+}
+
+.iletisim .iletisimcontainer .contentinfo .info li{
+	position: relative;
+	list-style: none;
+	display: flex;
+	margin: 20px 0;
+	cursor: pointer;
+	align-items: flex-start;
+}
+
+.iletisim .iletisimcontainer .contentinfo .info li span:nth-child(1){
+	width: 30px;
+	min-width: 30px;
+}
+
+.iletisim .iletisimcontainer .contentinfo .info li span:nth-child(1) img{
+	max-width: 100%;
+	filter: invert(1);
+	opacity: 0.5;
+}
+
+.iletisim .iletisimcontainer .contentinfo .info li span:nth-child(2){
+	color: #fff;
+	margin-left: 10px;
+	font-weight: 300;
+	opacity: 0.5;
+}
+
+.iletisim .iletisimcontainer .contentinfo .info li span:nth-child(2) img{
+	max-width: 100%;
+	filter: invert(1);
+	opacity: 0.5;
+}
+
+.iletisim .iletisimcontainer .contentinfo .info li:hover span:nth-child(1) img,
+.iletisim .iletisimcontainer .contentinfo .info li:hover span:nth-child(2){
+
+opacity: 1;
+
+}
+
+.iletisim .iletisimcontainer .contentinfo .sci{
+	position: relative;
+	display: flex;
+}
+
+.iletisim .iletisimcontainer .contentinfo .sci li{
+	list-style: none;
+	margin-right: 15px;
+}
+
+.iletisim .iletisimcontainer .contentinfo .sci li a{
+	text-decoration: none;
+}
+
+.iletisim .iletisimcontainer .contentinfo .sci li a img{
+	filter: invert(1);
+	opacity: 0.5;
+}
+
+.iletisim .iletisimcontainer .contentinfo .sci li:hover a img{
+
+	opacity: 1;
+}
+
+.iletisim .iletisimcontainer .contactform{
+	position: absolute;
+	padding: 70px 50px;
+	background: #fff;
+	margin-left: 150px;
+	padding-left: 250px;
+	width: calc(100% - 150px);
+	height: 100%;
+	box-shadow: 0 50px 50px rgba(0, 0, 0, 0.5);
+}
+
+.iletisim .iletisimcontainer .contactform h2{
+	color: #0f3959;
+	font-size: 24px;
+	font-weight: 500;
+}
+
+.iletisim .iletisimcontainer .contactform .formBox{
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 30px;
+}
+
+.iletisim .iletisimcontainer .contactform .formBox,inputBox{
+	position: relative;
+	margin: 0px 0px 35px 0px;
+}
+
+.iletisim .iletisimcontainer .contactform .formBox .inputBox.w50{
+	width: 47%;
+}
+
+.iletisim .iletisimcontainer .contactform .formBox .inputBox.w100{
+	width: 100%;
+}
+
+.iletisim .iletisimcontainer .contactform .formBox .inputBox input,
+.iletisim .iletisimcontainer .contactform .formBox .inputBox textarea{
+
+	width: 100% !important;
+	padding: 5px 0px;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+	border: none;
+	border-bottom: 1px solid #777;
+	outline: none;
+}
+
+.iletisim .iletisimcontainer .contentform .formBox .inputBox textarea{
+	min-height: 120px;
+}
+
+.iletisim .iletisimcontainer .contactform .formBox .inputBox span{
+	position:relative;
+	left: 0;
+	padding: 5px 0;
+	font-size: 18px;
+	font-weight: 300;
+	color: #333;
+	transition: 0.5;
+	pointer-events: none;
+}
+
+	.iletisim .iletisimcontainer .contactform .formBox .inputBox input:focus ~ span,
+	.iletisim .iletisimcontainer .contactform .formBox .inputBox textarea:focus ~ span,
+	.iletisim .iletisimcontainer .contactform .formBox .inputBox input:valid ~ span,
+	.iletisim .iletisimcontainer .contactform .formBox .inputBox textarea:valid ~ span
+	{
+ 
+ 	transform: translateY(-20px);
+ 	font-size: 12px;
+ 	font-weight: 400;
+ 	letter-spacing: 1px;
+ 	color: #ffc125;
+}
+.iletisim .iletisimcontainer .contactform .formBox .inputBox input[type="submit"]
+{
+	position: relative;
+	cursor: pointer;
+	background: #0f3953;
+	color: #fff;
+	border: none;
+	max-width: 150px;
+	padding: 12px;
+}
+
+.iletisim .iletisimcontainer .contactform .formBox .inputBox input[type="submit"]:hover{
+
+	background:#ffc125 ;
+}
+
+/*İLETİŞİM BİTİŞ*/
+
+/*FOOTER BAŞLANGIÇ*/
+
+footer{
+	position: relative;
+	width: 100%;
+	background-color:#3586ff ;
+	min-height: 100px;
+	padding: 50px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-bottom: 100%;
+	
+}
+
+footer .social_icon{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+	flex-wrap: wrap;
+	
+}
+footer .social_icon li{
+	list-style: none;
+}
+footer .social_icon li a{
+	font-size: 2em;
+	color: white;
+	margin: 0 10px;
+	display: inline-block;
+	transition: 0.5s;
+}
+footer .social_icon li a:hover{
+	transform: translateY(-10px);
+}
+footer p{
+	color: white;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font-size: 1.1em;
+
+}
+footer .wave{
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background-image: url(resim/wave.png);
+	background-size: 1000px 100px;
+}
+footer .wave#wave1{
+	z-index: 1000;
+	opacity: 1;
+	bottom: 0;
+	animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2{
+	z-index: 999;
+	opacity: 0.5;
+	bottom: 10px;
+	animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3{
+	z-index: 1000;
+	opacity: 0.2;
+	bottom: 15px;
+	animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4{
+	z-index: 999;
+	opacity: 0.7;
+	bottom: 20px;
+	animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave
+{
+	0%
+	{
+		background-position-x: 1000px;
+	}
+	100%
+	{
+		background-position-x:0px;
+	}
+}
+}
+@keyframes animateWave_02
+{
+	0%
+	{
+		background-position-x: 0px;
+	}
+	100%
+	{
+		background-position-x:1000px;
+	}
+}
+}
+
+/*FOOTER BİTİŞ*/

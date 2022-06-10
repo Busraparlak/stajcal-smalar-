@@ -1,0 +1,371 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Gideon+Roman&family=Herr+Von+Muellerhoff&family=Oxygen:wght@300&family=Poppins:wght@400;500;600;700&family=Teko:wght@300&display=swap');
+
+
+
+/*resetleme kodları*/
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	outline: none;
+}
+
+a{
+	text-decoration: none;
+}
+
+/*x eksenin de scrolun çıkmasını engeller*/
+body{
+	overflow-x: hidden;
+	font-family: 'poppins' , sans-serif;
+}
+/*HEADER BAŞLANGIÇ*/
+.logo img{
+	width: 100%;
+	max-width: 200px;
+	z-index: 999;
+}
+
+header{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 5px 10px;
+	transition: all ease 0.5s;
+	z-index: 99999;
+	background-color: #000080;
+}
+
+header ul li{
+	display: inline-block;
+	margin: 0 15px;
+}
+
+header ul li a{
+	color: white;
+	transition: all ease 0.5s;
+	font-weight: 700;
+}
+
+
+header:hover a{
+	color: #ffb90f;
+}
+
+.mega-menu{
+	position: absolute;
+	left: 15%;
+	top: 40px;
+	width: 100%;
+	background-color:#000080 ;
+	padding: 20px 100px;
+	border-radius: 5px;
+	display: none;
+}
+
+header ul li:hover .mega-menu{
+	display:block;
+	width: 100%;
+}
+
+.mega-menu ul li{
+	width: 100%;
+	margin-bottom: 5px;
+	display: block;
+}
+
+.mega-menu ul li a{
+	color:#ffb90f ;
+}
+header a{
+	text-decoration: none;
+}
+
+.mega-menu ul li ion-icon{
+	font-size: 12px;
+	opacity: 0;
+	transition: all ease 0.5s;
+}
+
+.mega-menu ul li a:hover ion-icon{
+	opacity: 1;
+}
+
+/*HEADER BİTİŞ*/
+
+
+
+/*CONTENT SECTİON BAŞLANGIÇ */
+
+.content{
+	height: 100vh;
+	display: flex;
+	flex-wrap: nowrap;
+}
+.content .item{
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	transition: all ease 0.8s;
+}
+
+.content .item img{
+	height: 100vh;
+	width: 100%;
+	object-fit: cover;
+}
+
+.content .item:hover{
+	width: 200%;
+}
+.content .item .text{
+	position: absolute;
+	left: 0;
+	bottom: -50px;
+	width: 100%;
+	height: 100%;
+	padding: 50px 50px 100px;
+	color: #fff;
+	display: flex;
+	align-items: flex-end;
+	opacity: 0;
+	transition: all ease 0.5s 0.2s;
+}
+
+.content .item:hover .text{
+ 	opacity: 1;
+ 	bottom: 0;
+}
+
+.content .item .text h3{
+	font-size: 23px;
+	font-weight: 700;
+	margin-bottom: 5px;
+}
+
+.content .item .text a{
+	color: #fff;
+	font-size: 18px;
+	text-decoration: none;
+}
+
+.content .item .text a span{
+	font-size: 20px;
+	display: inline-block;
+	transition: all ease 2s;
+}
+
+.content .item .text a:hover span{
+	transform: rotate(360deg);
+}
+
+
+/*CONTENT SECTİON BİTİŞ*/
+
+/*NEWS SLİDER BAŞLANGIÇ*/
+
+.slider{
+	margin-bottom: 20px;
+	position: relative;
+}
+.slider .owl-item.active.center .slider-card{
+	transform: scale(1.15);
+	opacity: 1;
+	background-color: grey;
+	background: #4b6cb7;  /* fallback for old browsers */
+	background: -webkit-linear-gradient(to right, #182848, #4b6cb7);  /* Chrome 10-25, Safari 5.1-6 */
+	background: linear-gradient(to right, #182848, #4b6cb7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+	color: #fff;
+}
+.slider-card{
+	background-color: #fff;
+	margin: 50px 15px 90px 15px;
+	border-radius: 5px;
+	box-shadow: 0 15px 45px -20px grey;
+	transform: scale(0.9);
+	opacity: 0.5;
+	transition: all 0.3s;
+}
+.slider-card img{
+	border-radius: 5px 5px 0px 0px;
+}
+.owl-nav .owl-next{
+	position: absolute;
+	top: calc(50% - 25px);
+	right: 0;
+	opacity: 1;
+	font-size: 30px !important;
+	z-index: 1;
+}
+.owl-nav .owl-prev{
+	position: absolute;
+	top: calc(50% - 25px);
+	left: 0;
+	opacity: 1;
+	font-size: 30px;
+	z-index: 1;
+}
+.post-review{
+	border-top: none;
+	padding: 15px 20px 5px;
+	position: relative;
+}
+.post-review:after{
+	content: "";
+	width: 90%;
+	height: 10%;
+	position: absolute;
+	top: 100%;
+	left: 5%;
+	opacity: 0;
+	background: rgba(0, 0, 0, 0) radial-gradient(ellipse at center center,rgba(0, 0, 0, 0.35) 0%,rgba(0, 0, 0,0) 80%);
+	transform: translateY(0);
+	transform: all 0.30s ease 0s;
+}
+.post-bar{
+	padding: 0;
+	list-style: none;
+}
+.post-bar li{
+	display: inline-block;
+	font-size: 16px;
+	font-family: 'raleway';
+	margin-right: 10px;
+	text-transform: capitalize;
+
+}
+.read{
+	text-transform: capitalize;
+	font-size: 15px;
+	color: black;
+	text-decoration: none;
+	color: white;
+	padding: 0px 30px 35px;
+	float: right;
+}
+.read ion-icon{
+	margin-left: 10px;
+}
+.read:hover{
+	text-decoration: none;
+	color:#fff ;
+
+}
+.container h1{
+	color: #000080;
+}
+
+
+
+/*NEWS SLİDER BAŞLANGIÇ*/
+
+/*FOOTER BAŞLANGIÇ*/
+
+footer{
+	position: relative;
+	width: 100%;
+	background-color:#3586ff ;
+	min-height: 100px;
+	padding: 20px 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-bottom: 100%;
+}
+
+footer .social_icon{
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 10px 0;
+	flex-wrap: wrap;
+	
+}
+footer .social_icon li{
+	list-style: none;
+}
+footer .social_icon li a{
+	font-size: 2em;
+	color: white;
+	margin: 0 10px;
+	display: inline-block;
+	transition: 0.5s;
+}
+footer .social_icon li a:hover{
+	transform: translateY(-10px);
+}
+footer p{
+	color: white;
+	text-align: center;
+	margin-top: 15px;
+	margin-bottom: 10px;
+	font-size: 1.1em;
+
+}
+footer .wave{
+	position: absolute;
+	top: -100px;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background-image: url(resim/wave.png);
+	background-size: 1000px 100px;
+}
+footer .wave#wave1{
+	z-index: 1000;
+	opacity: 1;
+	bottom: 0;
+	animation: animateWave 4s linear infinite;
+}
+footer .wave#wave2{
+	z-index: 999;
+	opacity: 0.5;
+	bottom: 10px;
+	animation: animateWave_02 4s linear infinite;
+}
+footer .wave#wave3{
+	z-index: 1000;
+	opacity: 0.2;
+	bottom: 15px;
+	animation: animateWave 3s linear infinite;
+}
+footer .wave#wave4{
+	z-index: 999;
+	opacity: 0.7;
+	bottom: 20px;
+	animation: animateWave_02 3s linear infinite;
+}
+@keyframes animateWave
+{
+	0%
+	{
+		background-position-x: 1000px;
+	}
+	100%
+	{
+		background-position-x:0px;
+	}
+}
+}
+@keyframes animateWave_02
+{
+	0%
+	{
+		background-position-x: 0px;
+	}
+	100%
+	{
+		background-position-x:1000px;
+	}
+}
+}
+
+/*FOOTER BİTİŞ*/
